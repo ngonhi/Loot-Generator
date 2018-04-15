@@ -11,6 +11,8 @@ public class Affixes {
 	public Affixes(File prefix, File suffix) throws FileNotFoundException {
 		Scanner pre = new Scanner(prefix);
 		Scanner suf = new Scanner(suffix);
+		this.prefix = new ArrayList<>();
+		this.suffix = new ArrayList<>();
 		while (pre.hasNextLine()) {
 			this.prefix.add(new Affix(pre.nextLine().split("\t")));
 		}

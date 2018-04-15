@@ -10,6 +10,7 @@ public class Armor {
 	
 	public Armor(File file) throws FileNotFoundException {
 		Scanner in = new Scanner(file);
+		this.armor = new HashMap<>();
 		while(in.hasNextLine()) {
 			String[] entry = in.nextLine().split("\t");
 			String[] stats = Arrays.copyOfRange(entry, 1, 3);

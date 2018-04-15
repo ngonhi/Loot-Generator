@@ -9,6 +9,7 @@ public class Monsters {
 	
 	public Monsters(File file) throws FileNotFoundException {
 		Scanner in = new Scanner(file);
+		this.monsters = new ArrayList<>();
 		while (in.hasNextLine()) {
 			this.monsters.add(new Monster(in.nextLine().split("\t")));
 		}
