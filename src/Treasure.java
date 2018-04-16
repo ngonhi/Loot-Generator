@@ -21,7 +21,7 @@ public class Treasure {
 		in.close();
 	}
 	
-	// Method
+	// Method: Return treasureClass field of the instance
 	public HashMap<String, String[]> getTreasureClass() { return this.treasureClass; }
 	
 }

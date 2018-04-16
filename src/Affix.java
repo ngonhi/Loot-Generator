@@ -14,7 +14,7 @@ public class Affix {
 		this.max = Integer.parseInt(entry[3]);
 	}
 	
-	// Methods
+	// Methods: Return the fields of the instance
 	public String getName() { return this.name; }
 	public String getModCode() { return this.modCode; }
 	public int getMin() { return this.min; }

@@ -14,7 +14,7 @@ public class Monster {
 		this.treasureClass = entry[3];
 	}
 	
-	//Methods
+	//Methods: Return the fields of the instance
 	public String getMonsClass() { return this.monsClass; }
 	public String getType() { return this.type; }
 	public int getLevel() { return this.level; }

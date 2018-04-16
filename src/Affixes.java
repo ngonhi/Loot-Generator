@@ -26,7 +26,7 @@ public class Affixes {
 		suf.close();
 	}
 	
-	// Methods
+	// Methods: Return the fields of the instance
 	public ArrayList<Affix> getPrefix() { return this.prefix; }
 	public ArrayList<Affix> getSuffix() { return this.suffix; }
 }

@@ -19,8 +19,6 @@ public class Monsters {
 		in.close();
 	} 
 	
-	// Method
-	public ArrayList<Monster> getMonsters() {
-		return this.monsters;
-	} // getMonster
+	// Method: Return monsters field of the instance
+	public ArrayList<Monster> getMonsters() { return this.monsters; }
 }

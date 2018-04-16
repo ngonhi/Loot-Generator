@@ -23,6 +23,6 @@ public class Armor {
 		in.close();
 	}
 	
-	// Method
+	// Method: Return armor field of the instance
 	public HashMap<String, int[]> getArmor() { return this.armor; }
 }
