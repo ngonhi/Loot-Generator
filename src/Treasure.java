@@ -5,18 +5,23 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Treasure {
-
-	public HashMap<String, String[]> treasure;
+	// Field
+	private HashMap<String, String[]> treasureClass;
 	
+	// Constructor
 	public Treasure(File file) throws FileNotFoundException {
 		Scanner in = new Scanner(file);
-		this.treasure = new HashMap<>();
+		this.treasureClass = new HashMap<>();
+		
 		while(in.hasNextLine()) {
 			String[] entry = in.nextLine().split("\t");
-			treasure.put(entry[0], Arrays.copyOfRange(entry, 1, 4));
+			treasureClass.put(entry[0], Arrays.copyOfRange(entry, 1, 4));
 		}
 		
 		in.close();
 	}
+	
+	// Method
+	public HashMap<String, String[]> getTreasureClass() { return this.treasureClass; }
 	
 }

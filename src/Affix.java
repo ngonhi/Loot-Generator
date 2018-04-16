@@ -1,16 +1,22 @@
 
 public class Affix {
-
-	public String Name;
-	public String modcode;
-	public int min;
-	public int max;
+	// Fields
+	private String name;
+	private String modCode;
+	private int min;
+	private int max;
 	
+	// Constructor
 	public Affix(String[] entry) {
-		this.Name = entry[0];
-		this.modcode = entry[1];
+		this.name = entry[0];
+		this.modCode = entry[1];
 		this.min = Integer.parseInt(entry[2]);
 		this.max = Integer.parseInt(entry[3]);
 	}
 	
+	// Methods
+	public String getName() { return this.name; }
+	public String getModCode() { return this.modCode; }
+	public int getMin() { return this.min; }
+	public int getMax() { return this.max; }
 }

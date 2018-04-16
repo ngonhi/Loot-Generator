@@ -1,22 +1,22 @@
 
 public class Monster {
-
-	public String Class;
-	public String Type;
-	public int Level;
-	public String TreasureClass;
+	// Fields
+	private String monsClass;
+	private String type;
+	private int level;
+	private String treasureClass;
 	
-	public Monster(String Class, String Type, int Level, String TreasureClass) {
-		this.Class = Class;
-		this.Type = Type;
-		this.Level = Level;
-		this.TreasureClass = TreasureClass;
-	}
-	
+	//Constructor
 	public Monster(String[] entry) {
-		this.Class = entry[0];
-		this.Type = entry[1];
-		this.Level = Integer.parseInt(entry[2]);
-		this.TreasureClass = entry[3];
+		this.monsClass = entry[0];
+		this.type = entry[1];
+		this.level = Integer.parseInt(entry[2]);
+		this.treasureClass = entry[3];
 	}
+	
+	//Methods
+	public String getMonsClass() { return this.monsClass; }
+	public String getType() { return this.type; }
+	public int getLevel() { return this.level; }
+	public String getTreasureClass() { return this.treasureClass; } 
 }
